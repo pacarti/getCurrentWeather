@@ -3,10 +3,10 @@ The script fetches the current weather of given location and prints it on the sc
 
 
 **Important**: The script needs an API key to make a call. You can obtain it for free from openweathermap.org, you have just to create a free account. Then, you can obtain it at:
-(https://home.openweathermap.org/api_keys)
+https://home.openweathermap.org/api_keys
 
 # Syntax
-<code>python3 getCurrentWeather.py <API_key> <location>
+<code>python3 getCurrentWeather.py <API_key> <location></code>
 
 Location is the name of the city for which you want to print out the current weather.
 
