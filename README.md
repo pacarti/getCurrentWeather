@@ -5,11 +5,6 @@ The script fetches the current weather of given location and prints it on the sc
 **Important**: The script needs an API key to make a call. You can obtain it for free from openweathermap.org, you have just to create a free account. Then, you can obtain it at:
 https://home.openweathermap.org/api_keys
 
-## Syntax
-<code>python3 getCurrentWeather.py <API_key> <location></code>
-
-Location is the name of the city for which you want to print out the current weather.
-
 The script first uses Geocoding API(https://openweathermap.org/api/geocoding-api) to translate the location name into its latitude and longitude(this only functionality is also available in the getLatLon.py script - it prints lat and lon on the screen). This is needed to avoid using deprecated "Direct geocoding" which is unmaintained anymore and is less precise for finding the geolocation data.
 
 After retrieving the necessary data, the script prints out the following current weather data of given location:
@@ -19,3 +14,8 @@ After retrieving the necessary data, the script prints out the following current
 * Humidity
 * Pressure(in hPa)
 * Wind speed(in km/h)
+
+### Syntax
+<code>python3 getCurrentWeather.py <API_key> <location></code>
+
+Location is the name of the city for which you want to print out the current weather.
