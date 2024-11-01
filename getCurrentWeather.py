@@ -14,7 +14,12 @@ location = ' '.join(sys.argv[2:])
 # Download the JSON data from OpenWeatherMap.org's API.
 url = 'https://api.openweathermap.org/geo/1.0/direct?q=%s&appid=%s' % (location, APPID)
 response = requests.get(url)
-response.raise_for_status()
+# 401 HTTP Error will be most likely caused by wrong API key hence the exception:
+try: 
+        response.raise_for_status()
+except requests.exceptions.HTTPError:
+        print("Incorrect API key!")
+        exit()
 
 # See the JSON data:
 # print(response.text)
