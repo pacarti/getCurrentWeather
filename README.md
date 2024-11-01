@@ -15,7 +15,11 @@ After retrieving the necessary data, the script prints out the following current
 * Pressure(in hPa)
 * Wind speed(in km/h)
 
-## Syntax
-<code>python3 getCurrentWeather.py <API_key> \<location\></code>
+## Usage
+Give execution permission to the script:
+<code>chmod +x getCurrentWeather</code>
+
+How to use: 
+<code>./getCurrentWeather <API_key> \<location\></code>
 
 Location is the name of the city for which you want to print out the current weather.
