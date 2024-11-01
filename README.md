@@ -20,9 +20,9 @@ Give execution permission to the script:
 
 <code>chmod +x getCurrentWeather</code>
 
-<br>
+<br/>
 ### How to run
 <code>./getCurrentWeather <API_key> \<location\></code>
 
-<br>
+<br/>
 Location is the name of the city for which you want to print out the current weather.
