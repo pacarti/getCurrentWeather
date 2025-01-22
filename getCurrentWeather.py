@@ -3,7 +3,7 @@
 
 import json, requests, sys, pprint
 
-if len(sys.argv) < 2:
+if len(sys.argv) < 3:
         print('Usage: getOpenWeateher.py APP_ID city_name')
         sys.exit()
 
