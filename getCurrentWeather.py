@@ -39,8 +39,8 @@ lon = geocodingData[0]['lon']
 # print(geocodingData[0]['lon'])
 
 # Print lat and lon:
-# print('Latitude of %s: %s' % (location, str(lat)))
-# print('Longitude of %s: %s' % (location, str(lon)))
+print('Latitude of %s: %s' % (location, str(lat)))
+print('Longitude of %s: %s' % (location, str(lon)))
 
 weather_url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={APPID}'
 # w_response - weather response
